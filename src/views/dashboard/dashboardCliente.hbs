@@ -62,7 +62,7 @@
     <div class="header--wrapper">
         <div class="header-title">
             <span>Primary</span>
-            <h2>Dashboard Tienda</h2>
+            <h2>Dashboard Clientes</h2>
     </div>
         <div class="user--info">
             <div class="search--box">
@@ -129,7 +129,7 @@
         </tr>
       </thead>
       <tbody>
-        {{#each tasksTien}}
+        {{#each dashclie}}
         <tr>
           <td class="py-3 px-6">{{id}}</td>
           <td class="p-3">{{nom_producto}}</td>
@@ -137,12 +137,12 @@
           <td class="p-3 text-center">{{precio_prod}}</td>
           <td class="p-3 text-center">{{cantidad_prod}}</td>
           <td class="p-3 flex">
-            <form action="/tasksTien/delete" method="POST" class="mx-2">
+            <form action="/dashclie/delete" method="POST" class="mx-2">
               <input type="hidden" value="{{id}}" name="id">
               <button class="bg-red-500 text-white px-3 py-1 rounded-sm" type="submit">
                 <i class="fas fa-trash"></i></button>
             </form>
-            <a href="/tasksTien/edit/{{id}}" class="bg-green-500 text-white px-3 py-1 rounded-sm">
+            <a href="/dashclie/edit/{{id}}" class="bg-green-500 text-white px-3 py-1 rounded-sm">
               <i class="fas fa-pen"></i></a>
           </td>
         </tr>

@@ -21,12 +21,20 @@ app.get('/login/index', (req, res) => {
 	res.render('login/index'); 
   });
 
+  app.get('/dashboard/dashboard', (req, res) => {
+	res.render('dashboard/dashboard'); 
+  });
+
   app.get('/login/productos', (req, res) => {
 	res.render('login/productos'); 
   });
 
-  app.get('/login/capas', (req, res) => {
-	res.render('login/capas'); 
+  app.get('/dashboard/productos', (req, res) => {
+	res.render('dashboard/productos'); 
+  });
+
+  app.get('/login/intienda', (req, res) => {
+	res.render('login/intienda'); 
   });
 
 
@@ -66,3 +74,5 @@ app.get('/', (req, res) => {
 		res.redirect('/login');
 	}
 });
+
+

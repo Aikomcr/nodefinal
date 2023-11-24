@@ -13,34 +13,60 @@ function register(req, res) {
 }
 
 function auth(req, res) {
-	let email = req.body.email;
-	let password = req.body.password;
+  const email = req.body.email;
+  const password = req.body.password;
+
+  // Validar la entrada del usuario
+  if (!email || !password) {
+    return res.status(400).send('Correo electrónico y contraseña son obligatorios.');
+  }
 
   req.getConnection((err, conn) => {
-    conn.query('SELECT * FROM users WHERE email = ?', [email], (err, rows) => {
-      if(rows.length > 0) {
-        console.log(rows);
-        req.getConnection((err, conn) => {
-          conn.query('SELECT * FROM Productos', (err, tasks) => {
-            if(err) {
-              res.json(err);
-            }
-            res.render('dashboard/dashboard', { tasks });
-          });
-        });
-      } else {
-        console.log('not');
-        res.render('login/index')
-      }
-      /*
-      req.session.loggedin = true;
-	req.session.name = name;
+    if (err) {
+      console.error('Error de conexión a la base de datos:', err);
+      return res.status(500).send('Error de servidor');
+    }
 
-  res.redirect('/');*/
-      
+    conn.query('SELECT * FROM users WHERE email = ?', [email], (err, rows) => {
+      if (err) {
+        console.error('Error durante la consulta:', err);
+        return res.status(500).send('Error de servidor');
+      }
+
+      if (rows.length > 0) {
+        const user = rows[0];
+
+        // Comparar contraseñas en texto plano
+        if (password === user.password) {
+          // Iniciar sesión y redirigir según el rol del usuario
+          req.session.loggedin = true;
+          req.session.user = {
+            id: user.email,
+            name: user.name,
+            role: user.role,
+          };
+
+          if (user.role === 'UsuTienda') {
+            return res.render('/dashboard/dashboard');
+          }if (user.role === 'usuClie') {
+            return res.redirect('/dashclie');
+          }
+           else {
+            return res.redirect('/dashboard/dashboard');
+          }
+        } else {
+          console.log('Contraseña incorrecta');
+          return res.render('login/index');
+        }
+      } else {
+        console.log('Usuario no encontrado');
+        return res.render('login/index');
+      }
     });
   });
 }
+
+
 
 function logout(req, res) {
   if (req.session.loggedin) {

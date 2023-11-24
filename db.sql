@@ -1,18 +1,31 @@
-CREATE DATABASE IF NOT EXISTS `nodelogin` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
-USE `nodelogin`;
+DROP DATABASE IF EXISTS `nodelogin`;
+CREATE DATABASE IF NOT EXISTS `nodelogin`;
+use `nodelogin`;
 
-  CREATE TABLE IF NOT EXISTS `users` (
-    `email` varchar(100) NOT NULL PRIMARY KEY,
-    `name` varchar(50) NOT NULL,
-    `password` varchar(255) NOT NULL
-  );
-  
-  CREATE TABLE IF NOT EXISTS `tasks`(
-  id int not null primary key auto_increment comment 'primary key',
-  title VARCHAR(100),
-  description varchar(255)
-  ) default charset utf8 comment '';
+CREATE TABLE `tasks` (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'primary key',
+  `title` varchar(100) DEFAULT NULL,
+  `description` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
-insert into `users` values ('daniel@gmail.com','daniel','123');
+CREATE TABLE `productos` (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'primary key',
+  `nom_producto` varchar(50) DEFAULT NULL,
+  `tienda_prod` varchar(50) DEFAULT NULL,
+  `precio_prod` int(11) DEFAULT NULL,
+  `cantidad_prod` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
-select * from users;
+CREATE TABLE `users` (
+  `email` varchar(100) NOT NULL,
+  `name` varchar(50) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `role` varchar(123) DEFAULT 'usuClie',
+  PRIMARY KEY (`email`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+INSERT INTO `users` VALUES('daniel@gmail.com','daniel','123','usuTienda');
+INSERT INTO `users` VALUES('aiko@gmail.com','aiko','123','usuClie');
+INSERT INTO `productos` VALUES(null,'leche','alqueria',30000,12);

@@ -19,10 +19,10 @@
 		<div class="information">
 			<div class="info-childs">
 				<h2>Bienvenido </h2>
-				<p>Para ingresar a PETSHOP Inicia Sesión con tus datos</p>
+				<p>Para ingresar a PETSHOP Inicia Sesión con tus datos de Tienda</p>
 
 				<input type="button" value="Registrarse" id="sign-up">
-				<a href="/login/intienda" class="link">Registrarse como tienda</a>
+				<a href="/login/index" class="link">Registrarse como Usuario</a>
 			</div>
 		</div>
 		<div class="form-information">
@@ -58,7 +58,7 @@
 		<div class="information">
 			<div class="info-childs">
 				<h2>Bienvenido </h2>
-				<p>Para ingresar a PETSHOP Inicia Sesión con tus datos</p>
+				<p>Para ingresar a PETSHOP Inicia Sesión con tus datos de Tienda</p>
 
 				<input type="button" value="iniciar sesión" id="sign-in">
 			</div>
@@ -66,31 +66,46 @@
 		<div class="form-information ">
 			<div class="form-information-childs">
 				<h2>Crea tu cuenta </h2>
-				<div class="icons">
-					<i class='bx bxl-google-plus'></i>
-					<i class='bx bxl-facebook-circle'></i>
-					<i class='bx bxl-linkedin-square'></i>
-				</div>
-				<p>o registrate con tus credenciales</p>
-				<form class="form" method="post" action="/createUsu">
-					<label >
-						<i class='bx bxs-user'></i>
-						<input type="text" placeholder="Ingresa tu usuario" name="name">
-					</label>
-					<label >
-						<i class='bx bxs-envelope'></i>
-						<input type="email" placeholder="Ingresa tu correo" name="email">
-					</label>
-					<label >
-						<i class='bx bxs-lock-alt'></i>
-						<input type="password" placeholder="Ingresa tu contraseña" name="password">
-					</label>
-					<input type="submit" value="Registrarse">
+				<form class="form" method="post" action="/createTien">
+  <!-- Campos para la tabla users -->
+  <label>
+    <i class='bx bxs-user'></i>
+    <input type="text" name="name" placeholder="Ingresa tu usuario">
+  </label>
+  <label>
+    <i class='bx bxs-envelope'></i>
+    <input type="email" name="email" placeholder="Ingresa tu correo">
+  </label>
+  <label>
+    <i class='bx bxs-lock-alt'></i>
+    <input type="password" name="password" placeholder="Ingresa tu contraseña">
+  </label>
 
-					<a href="/login/intienda" class="link">Registrarse como tienda</a>
-					
+  <!-- Campos para la tabla tienda -->
+  <label>
+    <i class='bx bxs-user'></i>
+    <input type="text" name="nombreTienda" placeholder="Nombre de la Tienda">
+  </label>
+  <label>
+    <i class='bx bxs-user'></i>
+    <input type="text" name="descTienda" placeholder="Descripción de la Tienda">
+  </label>
+  <label>
+    <i class='bx bxs-user'></i>
+    <select name="categTienda" value="Categoria">
+      <option disabled hidden selected>Categoria de la Tienda</option>
+      <option value="Comida">Comida</option>
+      <option value="Juguetes">Juguetes</option>
+      <option value="Hogar">Hogar</option>
+      <option value="Veterinaria">Veterinaria</option>
+      <option value="otro">otro</option>
+    </select>
+  </label>
 
-				</form>
+  <input type="submit" value="Registrarse">
+
+  <a href="/login/index" class="link">Registrarse como usuario</a>
+</
 			</div>
 		</div>
 	</div>

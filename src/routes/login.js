@@ -1,6 +1,7 @@
 const express = require('express');
-const LoginController = require('../controllers/LoginController');
 const TaskController = require('../controllers/TaskController');
+const LoginController = require('../controllers/LoginController');
+
 
 const router = express.Router();
 
@@ -9,11 +10,20 @@ router.get('/register', LoginController.register);
 router.post('/auth', LoginController.auth);
 router.get('/logout', LoginController.logout);
 
-router.get('/tasks', TaskController.index);
+router.get('/dashclie', TaskController.index);
 router.get('/create', TaskController.create);
 router.post('/create', TaskController.store);
-router.post('/tasks/delete', TaskController.destroy);
-router.get('/tasks/edit/:id', TaskController.edit);
-router.post('/tasks/edit/:id', TaskController.update);
+router.get('/createUsu', TaskController.createUsu);
+router.post('/createUsu', TaskController.storeUsu);
+router.post('/createTien', TaskController.storeTien);
+router.post('/dashProd', TaskController.getProductsByStore);
+router.post('/dashclie/delete', TaskController.destroy);
+router.get('/dashclie/edit/:id', TaskController.edit);
+router.post('/dashclie/edit/:id', TaskController.update);
+router.post('/tasksTien/delete', TaskController.destroy);
+router.get('/tasksTien/edit/:id', TaskController.edit);
+router.post('/tasksTien/edit/:id', TaskController.update);
 
 module.exports = router;
+
+
