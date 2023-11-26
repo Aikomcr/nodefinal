@@ -37,6 +37,10 @@ app.get('/login/index', (req, res) => {
 	res.render('login/intienda'); 
   });
 
+  app.get('/tasks/productos', (req, res) => {
+	res.render('/tasks/productos'); 
+  });
+
 
 app.use(bodyParser.urlencoded({
   extended: true

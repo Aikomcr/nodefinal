@@ -1,159 +1,189 @@
-<!DOCTYPE html> 
-<html lang="es">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-
-    <title>INICIO</title>
-   <link rel="stylesheet" href="/css/dashboard.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OmegaPetShop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="/css/index.css">
 </head>
 <body>
-<div class="sidebar">
-    <div class="logo">
-        <ul class="menu">
-            <li class="active">
-                <a href="#" >
-                    <i class='bx bxs-dashboard'></i>
-                    <span>Dashboard</span>
-                </a>
-            </li>
+<!-- menú -->
+    <header>
+
+        <input type="checkbox" name="" id="toggle">
+        <label for="toggle" class="fas fa-bars"></label>
 
 
-            <li>
-                <a href="/create">
-                    <i class='bx bx-customize'></i>
-                    <span>Productos</span>
-                </a>
-            </li>
+        <a href="#" class="logo">OmegaPetShop<span>🐾</span></a>
+        <nav class="navbar">
+        
+        </nav>
+        <div class="icons">
 
-
-            
-            <li>
-                <a href="">
-                    <i class='bx bxs-user-badge'></i>
-                    <span>Clientes</span>
-                </a>
-            </li>
-
-            <li>
-                <a href="">
-                    <i class='bx bxs-folder-plus'></i>
-                    <span>Registrar nuevos productos</span>
-                </a>
-            </li>
+            <a href="/logout" class="fas fa-share"></a>
+            <a href="#" class="fas fa-shopping-bag"> 1 </a>
+            <a href="/login/index" class="fas fa-user"></a>         
 
 
 
-            
-            <li class="logout">
-                <a href="/logout">
-                   00
-                    <span>Cerrar Sesión</span>
-                </a>
-            </li>
+        </div>
+    </header>
 
+  <section class="home" id="home">
 
-        </ul>
+    <div class="content">
+        <h3> Articulos de mascotas</h3>
+        <span>De muy buena calidad  </span>
+        <p>Articulos para tus mascotas de las mejores veterinarias, importados con la mejor calidad en todo el País
+        </p>
+        <a href="#" class="btn">shop now</a>
     </div>
-</div>
+  </section>
+
+       <!--Prodcutos en descuento section -->
 
 
-<div class="main--content">
-    <div class="header--wrapper">
-        <div class="header-title">
-            <span>Primary</span>
-            <h2>Dashboard Clientes</h2>
-    </div>
-        <div class="user--info">
-            <div class="search--box">
-            <i class='bx bx-search-alt'></i>
-            <input type="text" placeholder="Search">
+<section class="productos" id="productos">
+
+    <h1 class="heading">Últimos <span> Descuentos</span></h1>
+
+    <div class="box-container">
+
+        <div class="box">
+        <span class="discount">-10%</span>
+        <div class="image">
+            <img src="img/img1.jpg" alt="">
+            <div class="icons">
+                 <a href="#" class="fas fa-heart"></a>
+                 <a href="#" class="cart-btn">Comprar</a>
+                 <a href="#" class="fas fa-car"></a>
             </div>
-            <img src="img/salchicha.jpg" alt="">
         </div>
+        <div class="content">
+            <h3>Capa de lluvia para perro</h3>
+            <div class="price">$80.000 <span>$70.000</span></div>
+        </div>
+    </div>
+
+    <!--segundo-->
+
+    <div class="box">
+        <span class="discount">-10%</span>
+        <div class="image">
+            <img src="img/img2.jpg" alt="">
+            <div class="icons">
+                 <a href="#" class="fas fa-heart"></a>
+                 <a href="#" class="cart-btn">Comprar</a>
+                 <a href="#" class="fas fa-car"></a>
+            </div>
+        </div>
+        <div class="content">
+            <h3>Shampoo DINKY </h3>
+            <div class="price">$15.000 <span>$8.000</span></div>
+        </div>
+    </div>
+
+
+    <!--tercero-->
+
+
+    <div class="box">
+        <span class="discount">-5%</span>
+        <div class="image">
+            <img src="img/img3.webp" alt="">
+            <div class="icons">
+                 <a href="#" class="fas fa-heart"></a>
+                 <a href="#" class="cart-btn">Comprar</a>
+                 <a href="#" class="fas fa-car"></a>
+            </div>
+        </div>
+        <div class="content">
+            <h3>CanAmor Shampoo para perros y gatos</h3>
+            <div class="price">$20.000 <span>$12.000</span></div>
+        </div>
+    </div>
+
+
+
+     <!--cuarto-->
+
+
+     <div class="box">
+        <span class="discount">-12%</span>
+        <div class="image">
+            <img src="img/img11.jpg" alt="">
+            <div class="icons">
+                 <a href="#" class="fas fa-heart"></a>
+                 <a href="#" class="cart-btn">Comprar</a>
+                 <a href="#" class="fas fa-car"></a>
+            </div>
+        </div>
+        <div class="content">
+            <h3>Collar rosado para perros y gatos</h3>
+            <div class="price">$30.000 <span>$22.000</span></div>
+        </div>
+    </div>
+
+
+     <!--quinto-->
+
+
+     <div class="box">
+        <span class="discount">-10%</span>
+        <div class="image">
+            <img src="img/img12.jpg" alt="">
+            <div class="icons">
+                 <a href="#" class="fas fa-heart"></a>
+                 <a href="#" class="cart-btn">Comprar</a>
+                 <a href="#" class="fas fa-car"></a>
+            </div>
+        </div>
+        <div class="content">
+            <h3>Cuerda de juego para perros</h3>
+            <div class="price">%30.000 <span>$20.000</span></div>
+        </div>
+    </div>
+
+
+    <!--sexto-->
+
+
+    <div class="box">
+        <span class="discount">-10%</span>
+        <div class="image">
+            <img src="img/img10.jpg" alt="">
+            <div class="icons">
+                 <a href="#" class="fas fa-heart"></a>
+                 <a href="#" class="fas fa-car"></a>
+                 <a href="#" class="cart-btn">Comprar</a>
+            </div>
+        </div>
+        <div class="content">
+            <h3>Collar de metal para perros raza grande </h3>
+            <div class="price">$35.000 <span>$10.000</span></div>
+        </div>
+    </div>
+
+
+    
+
+</div>
+
+<a href="productos.html"  class="btn"> Ver más</a>
+</section>
+
+<!--FOOTERRRR-->
+
+
+    <div class="credit">creado por <span>AIKO CAMACHO 🦝</span> 
      </div>
+ 
 
-<div class="tabular--wrapper">
-    <h3 class="main--title">Productos</h3>
-        <div class="table-container">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Nombre Producto</th>
-                        <th>Nombre Tienda</th>
-                        <th>Precio Producto</th>
-                        <th>Categoria</th>
-                        <th>Cantidad</th>
-                        <th>Acciones</th>
-                    </tr>
-                    <tbody>
-                        <tr>
-                            <td>
-                                COMIDA PARA PERROS
-                            </td>
-                                <td>
-                                    Mis mascotas
-                                </td>
-                            <td>
-                                24.000
-                            </td>
-                            <td>
-                                Comida
-                            </td>
-                            <td>
-                                15
-                            </td>
-                            <td>
-                                <button><i class='bx bx-edit-alt'></i></button>
-                                <button><i class='bx bx-trash'></i></button>
-                            </td>
-                        </tr>
-                    </tbody>
-                </thead>
-            </table>
-        </div>
-    </h3>
+</section>
 
-  <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-  <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg mt-12">
 
-    <table class="table-fixed w-full">
-      <thead>
-        <tr class="bg-green-500 text-white">
-          <th class="w-20 py-4 ...">ID</th>
-          <th class="w-1/4 py-4 ...">Nombre producto</th>
-          <th class="w-1/2 py-4 ...">Tienda</th>
-          <th class="w-1/2 py-4 ...">Precio</th>
-          <th class="w-1/2 py-4 ...">Cantidad</th>
-          <th class="w-28 py-4 ...">Actions</th>
-        </tr>
-      </thead>
-      <tbody>
-        {{#each dashclie}}
-        <tr>
-          <td class="py-3 px-6">{{id}}</td>
-          <td class="p-3">{{nom_producto}}</td>
-          <td class="p-3 text-center">{{tienda_prod}}</td>
-          <td class="p-3 text-center">{{precio_prod}}</td>
-          <td class="p-3 text-center">{{cantidad_prod}}</td>
-          <td class="p-3 flex">
-            <form action="/dashclie/delete" method="POST" class="mx-2">
-              <input type="hidden" value="{{id}}" name="id">
-              <button class="bg-red-500 text-white px-3 py-1 rounded-sm" type="submit">
-                <i class="fas fa-trash"></i></button>
-            </form>
-            <a href="/dashclie/edit/{{id}}" class="bg-green-500 text-white px-3 py-1 rounded-sm">
-              <i class="fas fa-pen"></i></a>
-          </td>
-        </tr>
-        {{/each}}
-      </tbody>
-    </table>
-  </div>
-</div>
 
-</div>
-</div>
 
 </body>
 </html>

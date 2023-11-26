@@ -47,12 +47,12 @@ function auth(req, res) {
           };
 
           if (user.role === 'UsuTienda') {
-            return res.render('/dashboard/dashboard');
+            return res.render('/dashTiend');
           }if (user.role === 'usuClie') {
             return res.redirect('/dashclie');
           }
            else {
-            return res.redirect('/dashboard/dashboard');
+            return res.redirect('/dashTiend');
           }
         } else {
           console.log('Contraseña incorrecta');
