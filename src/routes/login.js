@@ -1,9 +1,11 @@
 const express = require('express');
 const TaskController = require('../controllers/TaskController');
 const LoginController = require('../controllers/LoginController');
-
-
 const router = express.Router();
+
+
+// Resto de tu código de rutas aquí...
+
 
 router.get('/login', LoginController.index);
 router.get('/register', LoginController.register);
@@ -18,6 +20,7 @@ router.get('/createUsu', TaskController.createUsu);
 router.post('/createUsu', TaskController.storeUsu);
 router.post('/createTien', TaskController.storeTien);
 router.post('/dashclie/delete', TaskController.destroy);
+router.get('/login/productos', TaskController.indexProductos);
 router.get('/dashclie/edit/:id', TaskController.edit);
 router.post('/dashclie/edit/:id', TaskController.update);
 router.post('/tasksTien/delete', TaskController.destroy);

@@ -6,10 +6,21 @@ const session = require('express-session');
 const bodyParser = require('body-parser')
 const loginRoutes = require('./routes/login');
 const { redirect } = require('express/lib/response');
-
+const path = require('path');
+const fileUpload = require('express-fileupload');
 
 const app = express();
 app.set('port', 5000);
+app.use(fileUpload());
+
+app.use((req, res, next) => {
+	console.log(`${req.method} ${req.url}`);
+	next();
+  });
+
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use('/img', express.static(path.join(__dirname, 'public', 'img')));
 
 app.set('views', __dirname + '/views');
 app.engine('.hbs', engine({
@@ -28,6 +39,9 @@ app.get('/login/index', (req, res) => {
   app.get('/login/productos', (req, res) => {
 	res.render('login/productos'); 
   });
+  app.get('/login/productos1', (req, res) => {
+	res.render('login/productos1'); 
+  });
 
   app.get('/dashboard/productos', (req, res) => {
 	res.render('dashboard/productos'); 
@@ -41,7 +55,6 @@ app.get('/login/index', (req, res) => {
 	res.render('/tasks/productos'); 
   });
 
-
 app.use(bodyParser.urlencoded({
   extended: true
 }));
@@ -51,8 +64,8 @@ app.use(myconnection(mysql, {
  host: 'localhost',
  user: 'root',
  password: '',
- port: 3307,
- database: 'nodelogin'
+ port: 3306,
+ database: 'nodelogin1'
 }, 'single'));
 
 app.use(session({

@@ -82,26 +82,16 @@
 
     
 <section class="productos">
-
-
     <h1 class="heading"> <span>Registre un nuevo producto❗</span></h1>
-
     <div class="row">
-
-    <form action="" method="POST" class="mt-4">
-
-        <input type="text" placeholder="Nombre Producto" class="nom_producto" name="nom_producto">
-        <input type="text" placeholder="Tienda" class="tienda_prod" name="tienda_prod">
-        <input type="numbre" placeholder="Precio" class="precio_prod" name="precio_prod">
-        <input type="number" placeholder="Cantidad" class="cantidad_prod" name="cantidad_prod">
-      
-    <input type="submit" value="Crear producto" class="btn">
-    </form>
-
-
+<form action="/create" method="post" enctype="multipart/form-data">
+            <input type="text" placeholder="Nombre Producto" class="nom_producto" name="nom_producto">
+            <input type="number" placeholder="Precio" class="precio_prod" name="precio_prod">
+            <input type="number" placeholder="Cantidad" class="cantidad_prod" name="cantidad_prod">
+            <input type="file" name="imagen_producto" accept="image/*">
+            <input type="submit" value="Crear producto" class="btn">
+        </form>
     </div>
-
-
 </section>
 
   </div>

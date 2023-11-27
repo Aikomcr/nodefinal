@@ -53,15 +53,17 @@
     <div class="header--wrapper">
         <div class="header-title">
             <span>Primary</span>
-            <h2>Dashboard Tienda</h2>
+            <h2>Dashboard Tienda {{user.name}} {{user.role}}</h2>
     </div>
         <div class="user--info">
-            <div class="search--box">
-            <i class='bx bx-search-alt'></i>
-            <input type="text" placeholder="Search">
-            </div>
-            <img src="img/salchicha.jpg" alt="">
-        </div>
+    <div class="search--box">
+        <i class='bx bx-search-alt'></i>
+        <input type="text" placeholder="Search">
+    </div>
+    <img src="img/salchicha.jpg" alt="">
+    <p>{{user.name}}</p>
+    <p>{{user.role}}</p>
+</div>
      </div>
 
 <div class="tabular--wrapper">
@@ -69,6 +71,10 @@
         <div class="table-container">
         </div>
     </h3>
+
+    <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+        <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg mt-12">
+            <p>¡Hola, {{user.name}}! Bienvenido a tu dashboard.</p>
 
   <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
   <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg mt-12">
@@ -81,6 +87,7 @@
           <th class="w-1/2 py-4 ...">Tienda</th>
           <th class="w-1/2 py-4 ...">Precio</th>
           <th class="w-1/2 py-4 ...">Cantidad</th>
+          <th class="w-1/2 py-4 ...">Foto</th>
           <th class="w-28 py-4 ...">Actions</th>
         </tr>
       </thead>
@@ -92,6 +99,9 @@
           <td class="p-3 text-center">{{tienda_prod}}</td>
           <td class="p-3 text-center">{{precio_prod}}</td>
           <td class="p-3 text-center">{{cantidad_prod}}</td>
+          <td class="p-3 text-center">
+  <img src="{{imagen_producto}}" alt="Imagen del producto" style="max-width: 100px; max-height: 100px;">
+</td>
           <td class="p-3 flex">
             <form action="/tasksTien/delete" method="POST" class="mx-2">
               <input type="hidden" value="{{id}}" name="id">
