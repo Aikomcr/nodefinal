@@ -35,6 +35,9 @@ app.get('/login/index', (req, res) => {
   app.get('/dashboard/dashboard', (req, res) => {
 	res.render('dashboard/dashboard'); 
   });
+  app.get('/login/comprar', (req, res) => {
+	res.render('login/comprar'); 
+  });
 
   app.get('/login/productos', (req, res) => {
 	res.render('login/productos'); 
@@ -64,7 +67,7 @@ app.use(myconnection(mysql, {
  host: 'localhost',
  user: 'root',
  password: '',
- port: 3306,
+ port: 3307,
  database: 'nodelogin1'
 }, 'single'));
 

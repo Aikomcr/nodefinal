@@ -21,7 +21,7 @@
 
 
             <li>
-                <a href="#">
+                <a href="/productos">
                     <i class='bx bx-customize' style='color:#ff9800' ></i>
                     <span>Productos</span>
                 </a>
@@ -87,8 +87,10 @@
 <form action="/create" method="post" enctype="multipart/form-data">
             <input type="text" placeholder="Nombre Producto" class="nom_producto" name="nom_producto">
             <input type="number" placeholder="Precio" class="precio_prod" name="precio_prod">
+         
             <input type="number" placeholder="Cantidad" class="cantidad_prod" name="cantidad_prod">
-            <input type="file" name="imagen_producto" accept="image/*">
+              <h4>Seleccione una imagen</h4>
+            <input type="file" class="seleccionar"  name="imagen_producto" accept="image/jpeg,png">
             <input type="submit" value="Crear producto" class="btn">
         </form>
     </div>

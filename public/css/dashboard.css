@@ -113,6 +113,7 @@ input::placeholder {
   height: 50px;
   cursor: pointer;
   border-radius: 50%;
+ 
 }
 
 
@@ -121,10 +122,10 @@ input::placeholder {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  background-image: url(/img/fondo3.1.jpg);
   border-radius: 10px;
   padding: 10px 2rem;
   margin-bottom: 1rem;
+  background-image: url(../img/fondo3.1.jpg);
 }
 
 .header--title {
@@ -229,6 +230,22 @@ tfoot td{
 
 /*Registrar productos*/
 
+.seleccionar{
+  
+  background-color:  #f1b459;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  padding: 10px 2rem;
+  margin-bottom: 1rem;
+}
+h4{
+  color: #fdfdfd;
+  text-align: center;
+}
 
  h1 span{
   display: flex;

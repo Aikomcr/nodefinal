@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productos</title>
     <link rel="stylesheet" href="/css/product.css">
+    <link rel="stylesheet" href="/css/popu.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   
@@ -21,14 +22,14 @@
     <a href="#" class="logo">OmegaPetShop<span>🐾</span></a>
     <nav class="navbar">
     
-        <a href="produc.html">Productos</a>
-        <a href="index.html">Sobre Nosotros</a>
+        <a href="/login/productos">Productos</a>
+        <a href="index">Sobre Nosotros</a>
 
     </nav>
     <div class="icons">
 
         <a href="#" class="fas fa-share"></a>
-        <a href="login.html" class="fas fa-user">Login</a>            
+        <a href="/login/index" class="fas fa-user">Login</a>            
 
 
 
@@ -62,13 +63,17 @@
       <p>Tienda: {{nombreTienda}}</p>
       <div class="icons">
         <a href="#" class="fas fa-heart"></a>
-        <a href="#" class="cart-btn">Comprar</a>
+        <a href="#" id="btn-abrir-popup"  class="cart-btn">Comprar</a>
         <a href="#" class="fas fa-car"></a>
       </div>
     </div>
   {{/each}}
 </section>
 
+
+
+
+           
            
 
         </div>
@@ -77,11 +82,37 @@
 
     </div>
 
+         <div class="overlay" id="overlay">
+                <div class="popup" id="popup">
+                    <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+                    <h3>OmegaPetShop</h3>
+                    <h4>Gracias por tu compra. Recuerda que el envio es contraentrega</h4>
+                    <h4>Por favor ingresa los siguientes datos.</h4>
+                    <form action="">
+                        <div class="contenedor-inputs">
+                            <input type="text" placeholder="Nombre">
+                            <input type="text" placeholder="Dirección">
+                            <input type="email" placeholder="Correo">
+                            
+                        </div>
+                        <input type="submit" class="btn-submit" value="Enviar y comprar">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+         
+
+
+   
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
  
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="/js/jquery-3.2.1.js"></script>
     <script src="/js/product.js"></script>
+    <script src="/js/popu.js"></script> 
 </body>
 </html>

@@ -38,11 +38,11 @@
 				
 					<label >
 						<i class='bx bxs-envelope'></i>
-						<input name="email" type="email" placeholder="Ingresa tu correo">
+						<input name="email" type="email" placeholder="Ingresa tu correo" maxlength="20" minlength="8" required>
 					</label>
 					<label >
 						<i class='bx bxs-lock-alt'></i>
-						<input name="password" type="password" placeholder="Ingresa tu contraseña">
+						<input name="password" type="password" placeholder="Ingresa tu contraseña" maxlength="10" minlength="6" required>
 					</label>
 					<input type="submit" value="Iniciar Sesión">
 				</form>
@@ -74,15 +74,15 @@
 				<form class="form" method="post" action="/createUsu">
 					<label >
 						<i class='bx bxs-user'></i>
-						<input type="text" placeholder="Ingresa tu usuario" name="name">
+						<input type="text" placeholder="Ingresa tu usuario" name="name" maxlength="10" minlength="5" required>
 					</label>
 					<label >
 						<i class='bx bxs-envelope'></i>
-						<input type="email" placeholder="Ingresa tu correo" name="email">
+						<input type="email" placeholder="Ingresa tu correo" name="email" maxlength="50" minlength="8" required>
 					</label>
 					<label >
 						<i class='bx bxs-lock-alt'></i>
-						<input type="password" placeholder="Ingresa tu contraseña" name="password">
+						<input type="password" placeholder="Ingresa tu contraseña" name="password" maxlength="10" minlength="6" required>
 					</label>
 					<input type="submit" value="Registrarse">
 
