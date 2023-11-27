@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos PetShop</title>
+    <title>Productos</title>
+    <link rel="stylesheet" href="/css/product.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-   <link rel="stylesheet" href="/css/index.css">
+  
 </head>
 <body>
-    
 
 <!-- menú -->
 <header>
@@ -19,15 +20,15 @@
 
     <a href="#" class="logo">OmegaPetShop<span>🐾</span></a>
     <nav class="navbar">
-        <a href="index.html">Inicio</a>
-     
-        
     
+        <a href="produc.html">Productos</a>
+        <a href="index.html">Sobre Nosotros</a>
+
     </nav>
     <div class="icons">
 
         <a href="#" class="fas fa-share"></a>
-        <a href="#" class="fas fa-user"></a>            
+        <a href="login.html" class="fas fa-user">Login</a>            
 
 
 
@@ -35,528 +36,456 @@
 </header>
 
 
-<!--Prodcutos section -->
 
+    <div class="wrap">
 
-<section class="productos" id="productos">
+        <h1 > Productos</h1>
+        <div class="store-wrapper">
 
-    <h1 class="heading">Productos</h1>
+            <div class="category-list">
+                <a href="#" class="category-items" category="all" >Todo las categorias </a>
+                <a href="#" class="category-items" category="Aseo" >Aseo </a>
+                <a href="#" class="category-items" category="jugeteria" >Jugeteria  </a>
+                <a href="#" class="category-items" category="acces" >Accesorios </a>
+                <a href="#" class="category-items" category="comperros" >Comida para perros </a>
+                <a href="#" class="category-items" category="comgatos" >Comida para gatos</a>
+                <a href="#" class="category-items" category="otros" >Otros..</a>
 
-    <div class="box-container">
-
-        <div class="box">
-        <span class="discount">-10%</span>
-        <div class="image">
-            <img src="/img/img1.jpg" alt="">
-            <div class="icons">
-                 <a href="#" class="fas fa-heart"></a>
-                 <a href="/login/capas" class="cart-btn">Ver más</a>
-                 <a href="#" class="fas fa-car"></a>
             </div>
-        </div>
-        <div class="content">
-            <h3>Capas de lluvia para perro</h3>
-            <h3>Tienda: Mi pequeño Amigo</h3>
-            <div class="price">$80.000 <span>$70.000</span></div>
-        </div>
-    </div>
 
-    <!--segundo-->
-
-    <div class="box">
-        <span class="discount">-10%</span>
-        <div class="image">
-            <img src="/img/img2.jpg" alt="">
-            <div class="icons">
-                 <a href="#" class="fas fa-heart"></a>
-                 <a href="friendly.html" class="cart-btn">Ver más</a>
-                 <a href="#" class="fas fa-car"></a>
-            </div>
-        </div>
-        <div class="content">
-            <h3>Shampoos para perros y collares</h3>
-            <h3>Tienda: Veterinaria PETFRIENDLLY</h3>
-            <div class="price">$15.000 <span>$8.000</span></div>
-        </div>
-    </div>
+            <section class="products-list">
 
 
-     <!--cuarto-->
+                <div class="product-items" category="Aseo">
+                    <img src="/img/img2.jpg" alt="">
+                    <a   href="#"> Shampoo Dinky</a>
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">Comprar</a>
+                        <a href="#" class="fas fa-car"></a>
+                   </div>
+                </div>
+                                <!--producto 1-->
 
+                <div class="product-items" category="Aseo">
+                    <img src="/img/img5.jpg" alt="">
+                    <a href="#"> Acondicionador Dinky</a>
+                    <a   href="#"> Shampoo Dinky</a>
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">Comprar</a>
+                        <a href="#" class="fas fa-car"></a>
+                   </div>
+                </div>
+                                <!--producto 2-->  
 
-     <div class="box">
-        <span class="discount">-12%</span>
-        <div class="image">
-            <img src="/img/img11.jpg" alt="">
-            <div class="icons">
-                 <a href="#" class="fas fa-heart"></a>
-                 <a href="#" class="cart-btn">Ver más</a>
-                 <a href="#" class="fas fa-car"></a>
-            </div>
-        </div>
-        <div class="content">
-            <h3>Collar rosado para perros y gatos</h3>
-            <div class="price">$30.000 <span>$22.000</span></div>
-        </div>
-    </div>
+                <div class="product-items" category="Aseo">
+                    <img src="/img/img3.webp" alt="">
+                    <a href="#"> Shampoo Can Amor</a>
+                    
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">Comprar</a>
+                        <a href="#" class="fas fa-car"></a>
+                   </div>
+                </div>
+                            <!-- producto 3-->
+                <div class="product-items" category="Aseo">
+                    <img src="/img/img4.jpg" alt="">
+                    <a href="#"> Shampoo y Jabón Cachorritos</a>
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">Comprar</a>
+                        <a href="#" class="fas fa-car"></a>
+                   </div>
+                </div>
 
+                            <!--producto 4-->
+                <div class="product-items" category="jugeteria">
+                    <img src="/img/img13.jpg" alt="">
+                    <a href="#"> Huesos de hule </a>
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">Comprar</a>
+                        <a href="#" class="fas fa-car"></a>
+                   </div>
+                </div>
 
-     <!--quinto-->
-
-
-     <div class="box">
-        <span class="discount">-10%</span>
-        <div class="image">
-            <img src="/img/img12.jpg" alt="">
-            <div class="icons">
-                 <a href="#" class="fas fa-heart"></a>
-                 <a href="#" class="cart-btn">Ver más</a>
-                 <a href="#" class="fas fa-car"></a>
-            </div>
-        </div>
-        <div class="content">
-            <h3>Cuerda de juego para perros</h3>
-            <div class="price">%30.000 <span>$20.000</span></div>
-        </div>
-    </div>
-
-
-    <!--sexto-->
-
-
-    <div class="box">
-        <span class="discount">-10%</span>
-        <div class="image">
-            <img src="/img/img10.jpg" alt="">
-            <div class="icons">
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="cart-btn">Ver más</a>
-                <a href="#" class="fas fa-car"></a>
-            </div>
-        </div>
-        <div class="content">
-            <h3>Collar de metal para perros raza grande </h3>
-            <div class="price">$35.000 <span>$10.000</span></div>
-        </div>
-    </div>
-
-
-
-
-     <!--septimo-->
-
-
-     <div class="box">
-     
-        <div class="image">
-            <img src="/img/img7.jpg" alt="">
-            <div class="icons">
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="cart-btn">Ver más</a>
-                <a href="#" class="fas fa-car"></a>
                 
-            </div>
+
+                            <!--producto 5-->
+                <div class="product-items" category="acces">
+                    <img src="/img/img11.jpg" alt="">
+                    <a href="#"> Collares para perros</a>
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">Comprar</a>
+                        <a href="#" class="fas fa-car"></a>
+                   </div>
+                </div>
+
+                            <!--producto 6-->
+                <div class="product-items" category="comperros">
+                    <img src="/img/comida1.jpg" alt="">
+                    <a href="#"> Comida para perros DOGSHOW</a>
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">Comprar</a>
+                        <a href="#" class="fas fa-car"></a>
+                   </div>
+                </div>
+
+
+                    <!--producto 7-->
+                    <div class="product-items" category="comgatos">
+                        <img src="/img/gato1.jpg" alt="">
+                        <a href="#"> Comida para gatos</a>
+                        <div class="icons">
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="cart-btn">Comprar</a>
+                            <a href="#" class="fas fa-car"></a>
+                       </div>
+                    </div>
+
+                    <!--producto 8-->
+                    <div class="product-items" category="comgatos">
+                        <img src="/img/gato1.jpg" alt="">
+                        <a href="#"> Comida para gatos</a>
+                        <div class="icons">
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="cart-btn">Comprar</a>
+                            <a href="#" class="fas fa-car"></a>
+                       </div>
+                    </div>
+
+
+
+
+                    <!--producto 9-->
+                    <div class="product-items" category="comgatos">
+                        <img src="/img/gato2.jpg" alt="">
+                        <a href="#"> Comida para gatos</a>
+                        <div class="icons">
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="cart-btn">Comprar</a>
+                            <a href="#" class="fas fa-car"></a>
+                       </div>
+                    </div>
+
+
+
+                    <!--producto 10-->
+                    <div class="product-items" category="comgatos">
+                        <img src="/img/gato3.jpg" alt="">
+                        <a href="#"> Comida para gatos</a>
+                        <div class="icons">
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="cart-btn">Comprar</a>
+                            <a href="#" class="fas fa-car"></a>
+                       </div>
+                    </div>
+
+
+
+
+                    <!--producto 11-->
+                    <div class="product-items" category="comgatos">
+                        <img src="/img/gato4.jpg" alt="">
+                        <a href="#"> Comida para gatos</a>
+                        <div class="icons">
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="cart-btn">Comprar</a>
+                            <a href="#" class="fas fa-car"></a>
+                       </div>
+                    </div>
+
+
+
+
+                    <!--producto 12-->
+                    <div class="product-items" category="comgatos">
+                        <img src="/img/gato5.jpg" alt="">
+                        <a href="#"> Comida para gatos</a>
+                        <div class="icons">
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="cart-btn">Comprar</a>
+                            <a href="#" class="fas fa-car"></a>
+                       </div>
+                    </div>
+
+
+
+
+
+                    <!--producto 13-->
+                    <div class="product-items" category="acces">
+                        <img src="/img/img1.jpg" alt="">
+                        <a href="#"> Capa de lluvia perros</a>
+                        <div class="icons">
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="cart-btn">Comprar</a>
+                            <a href="#" class="fas fa-car"></a>
+                       </div>
+                    </div>
+
+
+
+
+                    <!--producto 14-->
+                    <div class="product-items" category="acces">
+                        <img src="/img/gatocollar.webp" alt="">
+                        <a href="#"> Collar rosado gatos</a>
+                        <div class="icons">
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="cart-btn">Comprar</a>
+                            <a href="#" class="fas fa-car"></a>
+                       </div>
+                    </div>
+
+                
+
+                      <!--producto 15-->
+                      <div class="product-items" category="acces">
+                        <img src="/img/665a062f2a72e57e2e77bbbd00f67c86_tn.jpg" alt="">
+                        <a href="#"> Collar lujo gato</a>
+                        <div class="icons">
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="cart-btn">Comprar</a>
+                            <a href="#" class="fas fa-car"></a>
+                       </div>
+                    </div>
+
+
+
+                      <!--producto 16-->
+                      <div class="product-items" category="comperros">
+                        <img src="/img/ringo.jpg" alt="">
+                        <a href="#"> Comida RINGO perros</a>
+                        <div class="icons">
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="cart-btn">Comprar</a>
+                            <a href="#" class="fas fa-car"></a>
+                       </div>
+                    </div>
+
+
+
+
+
+                      <!--producto 18-->
+                      <div class="product-items" category="comperros">
+                        <img src="/img/chunky.jpg" alt="">
+                        <a href="#"> Comida CHUNKY perros</a>
+                        <div class="icons">
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="cart-btn">Comprar</a>
+                            <a href="#" class="fas fa-car"></a>
+                       </div>
+                    </div>
+
+
+
+
+
+                      <!--producto 19-->
+                      <div class="product-items" category="comperros">
+                        <img src="/img/crudo.jpg" alt="">
+                        <a href="#"> comida cruda para perros</a>
+                        <div class="icons">
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="cart-btn">Comprar</a>
+                            <a href="#" class="fas fa-car"></a>
+                       </div>
+                    </div>
+
+
+
+                     <!--producto 20-->
+                     <div class="product-items" category="jugeteria">
+                        <img src="/img/img12.jpg" alt="">
+                        <a href="#"> lazo con pelota para perros</a>
+                        <div class="icons">
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="cart-btn">Comprar</a>
+                            <a href="#" class="fas fa-car"></a>
+                       </div>
+                    </div>
+
+
+
+
+                     <!--producto 22-->
+                     <div class="product-items" category="otros">
+                        <img src="/img/casa1.webp" alt="">
+                        <a href="#"> Casas para perros</a>
+                        <div class="icons">
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="cart-btn">Comprar</a>
+                            <a href="#" class="fas fa-car"></a>
+                       </div>
+                    </div>
+
+
+
+                    
+                     <!--producto 23-->
+                     <div class="product-items" category="otros">
+                        <img src="/img/casa2.webp" alt="">
+                        <a href="#"> Casa para perros</a>
+                        <div class="icons">
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="cart-btn">Comprar</a>
+                            <a href="#" class="fas fa-car"></a>
+                       </div>
+                    </div>
+
+
+
+                    
+                     <!--producto 24-->
+                     <div class="product-items" category="otros">
+                        <img src="/img/casa3.jpg" alt="">
+                        <a href="#"> Casa para perros</a>
+                        <div class="icons">
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="cart-btn">Comprar</a>
+                            <a href="#" class="fas fa-car"></a>
+                       </div>
+                    </div>
+
+
+
+                    
+                     <!--producto 25-->
+                     <div class="product-items" category="otros">
+                        <img src="/img/rasca1.jpg" alt="">
+                        <a href="#"> rascador para gatos</a>
+                        <div class="icons">
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="cart-btn">Comprar</a>
+                            <a href="#" class="fas fa-car"></a>
+                       </div>
+                    </div>
+
+
+
+                    
+                     <!--producto 26-->
+                     <div class="product-items" category="otros">
+                        <img src="/img/rasca2.jpg" alt="">
+                        <a href="#"> rascador para gatos</a>
+                        <div class="icons">
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="cart-btn">Comprar</a>
+                            <a href="#" class="fas fa-car"></a>
+                       </div>
+                    </div>
+
+
+
+
+                    
+                     <!--producto 27-->
+                     <div class="product-items" category="otros">
+                        <img src="/img/rasca3.jpeg" alt="">
+                        <a href="#"> rascador para gatos</a>
+                        <div class="icons">
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="cart-btn">Comprar</a>
+                            <a href="#" class="fas fa-car"></a>
+                       </div>
+                    </div>
+
+
+
+
+                    
+                     <!--producto 28-->
+                     <div class="product-items" category="otros">
+                        <img src="/img/comegato.jpg" alt="">
+                        <a href="#"> comedero para gatos</a>
+                        <div class="icons">
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="cart-btn">Comprar</a>
+                            <a href="#" class="fas fa-car"></a>
+                       </div>
+                    </div>
+
+
+
+                            
+                     <!--producto 29-->
+                     <div class="product-items" category="otros">
+                        <img src="/img/comegato1.webp" alt="">
+                        <a href="#"> comedero para gatos</a>
+                        <div class="icons">
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="cart-btn">Comprar</a>
+                            <a href="#" class="fas fa-car"></a>
+                       </div>
+                    </div>
+
+
+
+
+
+                            
+                     <!--producto 30-->
+                     <div class="product-items" category="otros">
+                        <img src="/img/comperro.jpg" alt="">
+                        <a href="#"> comedero para perros</a>
+                        <div class="icons">
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="cart-btn">Comprar</a>
+                            <a href="#" class="fas fa-car"></a>
+                       </div>
+                    </div>
+
+
+
+
+
+                            
+                     <!--producto 31-->
+                     <div class="product-items" category="otros">
+                        <img src="/img/comperro2.webp" alt="">
+                        <a href="#"> comedero para perros</a>
+                        <div class="icons">
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="cart-btn">Comprar</a>
+                            <a href="#" class="fas fa-car"></a>
+                       </div>
+                    </div>
+
+
+
+
+                            
+                     <!--producto 32-->
+                     <div class="product-items" category="otros">
+                        <img src="/img/hamst.webp" alt="">
+                        <a href="#"> casas para hamster</a>
+                        <div class="icons">
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="cart-btn">Comprar</a>
+                            <a href="#" class="fas fa-car"></a>
+                       </div>
+                    </div>
+
+                   
+            </section>
+
         </div>
-        <div class="content">
-            <h3>shampoo para pelo blanco perro</h3>
-            <div class="price">$35.000 </div>
-        </div>
+
+
+
     </div>
 
 
-
-
-
-
-
-
-     <!--octavo-->
-
-
-     <div class="box">
-        
-        <div class="image">
-            <img src="/img/img8.jpg" alt="">
-            <div class="icons">
-                <a href="#" class="fas fa-heart"></a>
-                <a href="friendly.html" class="cart-btn">Ver más</a>
-                <a href="#" class="fas fa-car"></a>
-            </div>
-        </div>
-        <div class="content">
-            <h3>Collar rosa </h3>
-            <div class="price">$25.000 </div>
-        </div>
-    </div>
-
-
-     <!--diez-->
-
-
-     <div class="box">
-        
-        <div class="image">
-            <img src="/img/img11.jpg" alt="">
-            <div class="icons">
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="cart-btn">Ver más</a>
-                <a href="#" class="fas fa-car"></a>
-            </div>
-        </div>
-        <div class="content">
-            <h3>Collar gato </h3>
-            <div class="price">$35.000 </div>
-        </div>
-    </div>
-
-
-
-
-
-
-     <!--once-->
-
-
-     <div class="box">
-        
-        <div class="image">
-            <img src="/img/comida3.jpg" alt="">
-            <div class="icons">
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="cart-btn">Ver más</a>
-                <a href="#" class="fas fa-car"></a>
-            </div>
-        </div>
-        <div class="content">
-            <h3>comida para perro WOW CAN </h3>
-            <div class="price">$35.000 </div>
-        </div>
-    </div>
-
-
-
-
-
-
-     <!--doce-->
-
-
-     <div class="box">
-        
-        <div class="image">
-            <img src="/img/gato1.jpg" alt="">
-            <div class="icons">
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="cart-btn">Ver más</a>
-                <a href="#" class="fas fa-car"></a>
-            </div>
-        </div>
-        <div class="content">
-            <h3>CoMIDA PARA GATO MONELLO </h3>
-            <div class="price">$35.000 </div>
-        </div>
-    </div>
-
-
-
-
-
-
-     <!--trece-->
-
-
-     <div class="box">
-      
-        <div class="image">
-            <img src="/img/img14.jpg" alt="">
-            <div class="icons">
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="cart-btn">Ver más</a>
-                <a href="#" class="fas fa-car"></a>
-            </div>
-        </div>
-        <div class="content">
-            <h3> Soga para perros </h3>
-            <div class="price">$35.000 </div>
-        </div>
-    </div>
-
-
-
-
-
-
-     <!--catorce-->
-
-
-     <div class="box">
-       
-        <div class="image">
-            <img src="/img/comida1.jpg" alt="">
-            <div class="icons">
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="cart-btn">Ver más</a>
-                <a href="#" class="fas fa-car"></a>
-            </div>
-        </div>
-        <div class="content">
-            <h3>Comida DOG SHOW</h3>
-            <div class="price">$35.000 </div>
-        </div>
-    </div>
-    
-   <!--quince-->
-
-
-   <div class="box">
-       
-    <div class="image">
-        <img src="/img/comida2.jpg" alt="">
-        <div class="icons">
-            <a href="#" class="fas fa-heart"></a>
-            <a href="#" class="cart-btn">Ver más</a>
-            <a href="#" class="fas fa-car"></a>
-        </div>
-    </div>
-    <div class="content">
-        <h3>Comida perros </h3>
-        <div class="price">$35.000 </div>
-    </div>
-</div>
-
-
-   <!--16-->
-
-
-   <div class="box">
-       
-    <div class="image">
-        <img src="/img/gato2.jpg" alt="">
-        <div class="icons">
-            <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="cart-btn">Ver más</a>
-                <a href="#" class="fas fa-car"></a>
-        </div>
-    </div>
-    <div class="content">
-        <h3>Comida gatos CATCHOW </h3>
-        <div class="price">$35.000 </div>
-    </div>
-</div>
-
-   <!--17-->
-
-
-   <div class="box">
-       
-    <div class="image">
-        <img src="/img/gato3.jpg" alt="">
-        <div class="icons">
-            <a href="#" class="fas fa-heart"></a>
-            <a href="#" class="cart-btn">Ver más</a>
-            <a href="#" class="fas fa-car"></a>
-        </div>
-    </div>
-    <div class="content">
-        <h3>Comida gatos MIRRINGO </h3>
-        <div class="price">$35.000 </div>
-    </div>
-</div>
-
-
-   <!--18-->
-
-
-   <div class="box">
-       
-    <div class="image">
-        <img src="/img/gato4.jpg" alt="">
-        <div class="icons">
-            <a href="#" class="fas fa-heart"></a>
-            <a href="#" class="cart-btn">Ver más</a>
-            <a href="#" class="fas fa-car"></a>
-        </div>
-    </div>
-    <div class="content">
-        <h3>Comida en lata para gato  </h3>
-        <div class="price">$35.000 </div>
-    </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-</div>
-
-</section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="sidebar">
-    <div class="logo">
-        <ul class="menu">
-            <li class="active">
-                <a href="#" >
-                    <i class='bx bxs-dashboard'></i>
-                    <span>Dashboard</span>
-                </a>
-            </li>
-
-
-            <li>
-                <a href="#">
-                    <i class='bx bx-customize'></i>
-                    <span>Productos</span>
-                </a>
-            </li>
-
-
-            
-            <li>
-                <a href="">
-                    <i class='bx bxs-user-badge'></i>
-                    <span>Clientes</span>
-                </a>
-            </li>
-
-            <li>
-                <a href="">
-                    <i class='bx bxs-folder-plus'></i>
-                    <span>Registrar nuevos productos</span>
-                </a>
-            </li>
-
-
-
-            
-            <li class="logout">
-                <a href="/logout">
-                   00
-                    <span>Cerrar Sesión</span>
-                </a>
-            </li>
-
-
-        </ul>
-    </div>
-</div>
-
-
-<div class="main--content">
-    <div class="header--wrapper">
-        <div class="header-title">
-            <span>Primary</span>
-            <h2>Dashboard</h2>
-    </div>
-        <div class="user--info">
-            <div class="search--box">
-            <i class='bx bx-search-alt'></i>
-            <input type="text" placeholder="Search">
-            </div>
-            <img src="img/salchicha.jpg" alt="">
-        </div>
-     </div>
-
-<div class="tabular--wrapper">
-    <h3 class="main--title">Productos</h3>
-        <div class="table-container">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Nombre Producto</th>
-                        <th>Nombre Tienda</th>
-                        <th>Precio Producto</th>
-                        <th>Categoria</th>
-                        <th>Cantidad</th>
-                        <th>Acciones</th>
-                    </tr>
-                    <tbody>
-                        <tr>
-                            <td>
-                                COMIDA PARA PERROS
-                            </td>
-                                <td>
-                                    Mis mascotas
-                                </td>
-                            <td>
-                                24.000
-                            </td>
-                            <td>
-                                Comida
-                            </td>
-                            <td>
-                                15
-                            </td>
-                            <td>
-                                <button><i class='bx bx-edit-alt'></i></button>
-                                <button><i class='bx bx-trash'></i></button>
-                            </td>
-                        </tr>
-                    </tbody>
-                </thead>
-            </table>
-        </div>
-    </h3>
-
-  <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-  <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg mt-12">
-
-    <table class="table-fixed w-full">
-      <thead>
-        <tr class="bg-green-500 text-white">
-          <th class="w-20 py-4 ...">ID</th>
-          <th class="w-1/4 py-4 ...">Nombre producto</th>
-          <th class="w-1/2 py-4 ...">Tienda</th>
-          <th class="w-1/2 py-4 ...">Precio</th>
-          <th class="w-1/2 py-4 ...">Cantidad</th>
-          <th class="w-28 py-4 ...">Actions</th>
-        </tr>
-      </thead>
-      <tbody>
-        {{#each tasks}}
-        <tr>
-          <td class="py-3 px-6">{{id}}</td>
-          <td class="p-3">{{nom_producto}}</td>
-          <td class="p-3 text-center">{{tienda_prod}}</td>
-          <td class="p-3 text-center">{{precio_prod}}</td>
-          <td class="p-3 text-center">{{cantidad_prod}}</td>
-          <td class="p-3 flex">
-            <form action="/tasks/delete" method="POST" class="mx-2">
-              <input type="hidden" value="{{id}}" name="id">
-              <button class="bg-red-500 text-white px-3 py-1 rounded-sm" type="submit">
-                <i class="fas fa-trash"></i></button>
-            </form>
-            <a href="/tasks/edit/{{id}}" class="bg-green-500 text-white px-3 py-1 rounded-sm">
-              <i class="fas fa-pen"></i></a>
-          </td>
-        </tr>
-        {{/each}}
-      </tbody>
-    </table>
-  </div>
-</div>
-
-</div>
-</div>
-
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+ 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/js/jquery-3.2.1.js"></script>
+    <script src="/js/product.js"></script>
 </body>
 </html>
